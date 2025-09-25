@@ -29,10 +29,3 @@
 欢迎通过 Pull Request 在 `script.js` 中添加新的答案！  
 原则：温暖、中立、启发思考，不鼓励极端行为。
 
-## 技术栈
-- HTML / CSS / JavaScript
-- 零依赖，纯前端
-- 支持 GitHub Pages 部署
-
-## 许可证
-MIT License
