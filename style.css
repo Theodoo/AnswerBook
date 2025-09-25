@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Noto Serif SC', serif;
+  background: #f9f3e9;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #444;
+}
+
+.container {
+  max-width: 500px;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #8b5a2b;
+}
+
+p {
+  margin-bottom: 20px;
+  color: #666;
+  font-size: 1.1rem;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 2px solid #d4c8a1;
+  border-radius: 8px;
+  font-size: 1rem;
+  background: #fff;
+  color: #333;
+  outline: none;
+}
+
+input::placeholder {
+  color: #aaa;
+}
+
+button {
+  background: #8b5a2b;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 8px;
+  margin-bottom: 30px;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background: #6b451b;
+}
+
+/* Book Styles */
+.book {
+  width: 300px;
+  height: 200px;
+  position: relative;
+  perspective: 1000px;
+  margin: 30px auto;
+  cursor: pointer;
+}
+
+.book-cover {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  backface-visibility: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border: 3px solid #8b5a2b;
+}
+
+.front {
+  background: #c9a567;
+  background-image: linear-gradient(135deg, #c9a567 0%, #a6834a 100%);
+  color: white;
+  transform: rotateY(0);
+}
+
+.back {
+  background: #f5f0e6;
+  color: #555;
+  transform: rotateY(-180deg);
+  overflow: hidden;
+}
+
+#result {
+  padding: 20px;
+  line-height: 1.8;
+}
+
+/* Flip Animation */
+.book.flipped .front {
+  transform: rotateY(180deg);
+}
+
+.book.flipped .back {
+  transform: rotateY(0deg);
+}
