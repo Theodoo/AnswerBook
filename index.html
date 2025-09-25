@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>答案之书</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <h1>📖 答案之书</h1>
+    <p>问一个只有你知道的问题…</p>
+    <input type="text" id="question" placeholder="比如：我该接受这份offer吗？" />
+    <button onclick="getAnswer()">摇一摇，看答案</button>
+
+    <div class="book" id="book">
+      <div class="book-cover front"></div>
+      <div class="book-cover back" id="back">
+        <p id="result"></p>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
