@@ -2,7 +2,7 @@
 
 一本写给互联网的「答案之书」——当你犹豫不决时，来这里问一句。
 
-👉 [在线体验](https://Theodoo.github.io/answer-book)（发布后替换链接）
+👉 [在线体验](https://Theodoo.github.io/AnserBook)
 
 ![Preview](preview.png) <!-- 可截图保存为 preview.png -->
 
